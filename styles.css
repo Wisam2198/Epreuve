@@ -168,6 +168,17 @@ ul li a:hover {
   color: #ffffff;
 }
 
+.CV {
+  display: grid;
+  place-items: center;
+}
+
+.CV img {
+  width: 35%;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+}
+
 .image {
   display: grid;
   place-items: center;
