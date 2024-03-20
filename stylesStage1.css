@@ -104,6 +104,16 @@ ul li a:hover {
   gap: 4rem;
 }
 
+.section__container2 {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  margin-top: 5rem;
+}
+
 .content {
   display: flex;
   align-items: center;
@@ -174,8 +184,8 @@ ul li a:hover {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Change la disposition en flexbox */
-  flex-direction: column; /* Met les éléments en colonne */
+  display: flex;
+  flex-direction: column;
 }
 
 .dropdown-menu li {
@@ -188,12 +198,11 @@ ul li a:hover {
   font-size: 16px;
   padding: 5px;
   transition: all 0.3s ease;
-  display: block; /* Fait que les liens occupent toute la largeur */
+  display: block;
   width: 80px;
   height: 50px;
 }
 
-/* Style du bouton pour afficher le menu déroulant */
 .dropdown-btn {
   background-color: rgb(40, 70, 201);
   border: none;
@@ -216,27 +225,18 @@ ul li a:hover {
   color: #ffffff;
 }
 
-.SIO {
+.image-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
-.CV {
-  display: grid;
-  place-items: center;
-}
-
-.CV img {
-  width: 35%;
-  margin-top: 6rem;
-  margin-bottom: 2rem;
-}
-
-.parcoureo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.separator {
+  width: 100%;
+  height: 3px;
+  background-color: black;
 }
 
 .image {
@@ -287,4 +287,17 @@ ul li a:hover {
   .action__btns {
     margin: auto;
   }
+}
+
+h1 {
+  margin-left: 3rem;
+  text-align: center;
+  font-style: italic;
+  font-size: 200%;
+  text-decoration: underline;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-weight: normal;
 }

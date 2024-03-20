@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../stylesStage1.css" />
+    <title>Portfolio Wisam</title>
+</head>
+
+<body class="section">
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="../index.html">Portfolio</a></div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" name="check" id="check" />
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a href="CV.html">CV</a></li>
+                <li><a href="Stage_1.html">Stage 1</a></li>
+                <li><a href="Stage_2.html">Stage 2</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section><br><br><br><br><br>
+        <!-- Bouton pour afficher le menu déroulant -->
+        <button class="dropdown-btn" onclick="toggleDropdown()">Menu</button>
+
+        <!-- Menu déroulant -->
+        <div class="dropdown-menu" id="dropdown-menu">
+            <ul>
+                <li><a href="#organisation">Organisation</a></li>
+                <li><a href="#missions">Missions</a></li>
+                <li><a href="#Stage">Stage</a></li>
+            </ul>
+        </div>
+        <div class="image-container DSIM">
+            <img src="../images/DSIM.jfif">
+            <img src="../images/DSIM_IRL.png">
+        </div>
+
+        <div class="separator"></div><br><br>
+
+        <div id="organisation">
+            <h1>L'organisation de l'entreprise :</h1><br><br><br><br>
+            <h2>&nbsp;&nbsp;&nbsp;Directeur : Laurent Villion</h2><br>
+            <h2>&nbsp;&nbsp;&nbsp;Responsable administrative : Brigitte Nonque</h2><br>
+            <h2>&nbsp;&nbsp;&nbsp;Directeur-adjoint : Patrick Eustache</h2><br>
+            <h2>&nbsp;&nbsp;&nbsp;Effectif : 61 personnes</h2><br>
+            <h2>&nbsp;&nbsp;&nbsp;La gouvernance de la DSIM repose sur le dispositif suivant :</h2><br>
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Le Comité de Pilotage (CoPil)</h2><br>
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Le Comité Technique (Cotech)</h2><br>
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Le Codir</h2><br>
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Le Directeur</h2><br>
+        </div><br><br>
+
+        <div id="missions">
+            <h1>Mes missions :</h1>
+            <div class="section__container2">
+                <h2>Sous les directives de mon tuteur Quentin Burger je me suis fais attribuer comme
+                    tâche de trouver, installer, configurer et tester des antivirus pour l’entreprise.<br>
+                    En effet l’organisation arrivait au bout de sa licence d’antivirus à la fin du mois de juin,
+                    ils se sont donc retrouver à devoir chercher une nouvelle solution d’antivirus,
+                    je me suis fait intégrer dans le projet et me suis donc mis à travailler avec eux.</h2>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        function toggleDropdown() {
+            var dropdownMenu = document.getElementById("dropdown-menu");
+            var dropdownBtn = document.querySelector(".dropdown-btn");
+            if (dropdownMenu.style.display === "block") {
+                dropdownMenu.style.display = "none";
+            } else {
+                dropdownMenu.style.display = "block";
+                dropdownMenu.style.top = (dropdownBtn.offsetTop + dropdownBtn.offsetHeight) + "px";
+                dropdownMenu.style.left = dropdownBtn.offsetLeft + "px";
+            }
+        }
+    </script>
+</body>
+
+</html>
