@@ -239,6 +239,16 @@ ul li a:hover {
   height: 50px;
 }
 
+.excel {
+  width: 10%;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .portfolio {
   color: var(--primary-color);
 }
