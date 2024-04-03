@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../style/stylesPresentation.css" />
+
     <title>Portfolio Wisam</title>
 </head>
 
@@ -24,6 +25,7 @@
                 <li><a href="CV.html">CV</a></li>
                 <li><a href="Stage_1.html">Stage 1</a></li>
                 <li><a href="Stage_2.html">Stage 2</a></li>
+                <li><a href="AP.html">AP</a></li>
             </ul>
         </div>
     </nav>
@@ -35,81 +37,124 @@
         <!-- Menu déroulant -->
         <div class="dropdown-menu" id="dropdown-menu">
             <ul>
-                <li><a href="#Parcoureo">STI2D</a></li>
-                <li><a href="#SIO">BTS</a></li>
-                <li><a href="#Stage">Stage</a></li>
+                <li><a href="#frise">Parcours</a></li>
+                <li><a href="#Experience">Expérience</a></li>
+                <li><a href="#Excel">Tableau excel</a></li>
             </ul>
         </div>
-        <div id="Parcoureo">
-            <h1 style="margin-left: 3rem; text-decoration: underline; font-family: 'Times New Roman', Times, serif;">
-                Présentation personnelle :</h1>
-            <div class="section__container">
-                <div class="content">
-                    <h1>Tout d'abord il faut savoir que je viens d'un bac STI2D option SIN que j'ai obtenu au lycée
-                        Pablo
-                        Néruda à Saint-Martin-d'Hères. Je me suis orienté dans cette option car
-                        depuis mes 15 ans j'ai découvert ma passion pour l'informatique et plus précisement pour le
-                        développement web grâce à un site du nom de Parcoureo. Ce site permet de découvrir quelle
-                        secteur
-                        professionnelle nous correspond le plus en y renseignant nos centres d'interêt.</h1>
-                </div>
-                <div class="parcoureo">
-                    <img src="../images/Parcoureo.jpg" />
+
+        <!-- frise_chronologique -->
+        <section class="frise_chronologique" id="frise">
+            <section>
+                <section class="TitrePresentation">
+                    <h1>Mon Parcours Scolaire</h1>
+                </section>
+                <section class="TitrePresentation">
+                    <hr>
+                </section>
+            </section>
+            <br>
+            <ul class="frise">
+                <li class="carte" style="--accent-color:#F380FF">
+                    <div class="date">2021-2022</div>
+                    <div class="title">Bac STI2D option SIN <br> Saint Martin d'Hères.
+                    </div>
+                    <div class="descr">
+                        Baccalauréat Sciences et Technologies de l'Industrie et du Développement Durable option Système
+                        Informatique et Numérique.
+                        <br>
+                        <strong>Lycée Pablo Néruda</strong>
+                    </div>
+                </li>
+                <li class="carte" style="--accent-color:#E24A68">
+                    <div class="date">2022 – 2023</div>
+                    <div class="title">BTS SIO option SLAM, <br> Seyssinet-Pariset. </div>
+                    <div class="descr">
+                        BTS Services Informatiques aux Organisations option Solutions Logiciel et Application Métier.
+                        <br>
+                        <strong>Lycée Aristide Berges</strong>
+                    </div>
+                </li>
+                <li class="carte" style="--accent-color:#FBCA3E">
+                    <div class="date">2023-2024</div>
+                    <div class="title">BTS SIO 2 option SLAM, <br> Seyssinet-Pariset. </div>
+                    <div class="descr">
+                        BTS Services Informatiques aux Organisations option Solutions Logiciel et Application Métier.
+                        <br>
+                        <strong>Lycée Aristide Berges</strong>
+                        <a href="https://aristide-berges.ent.auvergnerhonealpes.fr/" target="_blank" rel="noreferrer">
+                            <button id="site2"> Site web du lycée </button>
+                        </a>
+                    </div>
+                </li>
+                <li class="carte" style="--accent-color:#4CADAD">
+                    <div class="date">Objectif 2024-2027</div>
+                    <div class="title">DEVOPS en alternance, <br> EPSI Grenoble. </div>
+                    <div class="descr">
+                        DEVOPS en première année et si possible, poursuivre en mastère.
+                        <br>
+                        <strong> Développeur FULLSTACK </strong>
+                        <a href="https://www.epsi.fr/epsi-grenoble/" target="_blank" rel="noreferrer">
+                            <button id="site1"> Site web de l'école </button>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="separator"></div>
+
+            <div id="Experience"><br><br><br><br>
+                <h1>Expérience professionnelle :</h1><br><br><br>
+                <div class="section__container2">
+                    <div class="content2">
+                        <h2>CDD à la cuisine centrale de Saint-Martin-d'Hères</h2>
+                        <p>J'ai effectué pendant les vacances d'été 2022 pour une durée de 1 mois un job à la cuisine
+                            centrale de Saint-Martin-d'Hères où j'ai été chargé de m'occuper de préparation de commande
+                            pour des collèges, écoles primaires, crèches et maison de retraite.</p>
+                        <p>J'ai grâce à cette expérience pu améliorer mes compétences en travail d'équipe, mais aussi en
+                            autonomie, à être sérieux et en organisation.</p>
+                        <img src="../images/cuisine.jpg" alt="Cuisine">
+                    </div>
+                    <div class="content2">
+                        <h2>CDD à la pharmacie du Verderet</h2>
+                        <p>J'ai aussi pu effectuer un autre job d'été en 2019 de la même durée à la pharmacie du
+                            Verderet durant lequel j'ai été chargé de faire de la gestion de stock en arrière-boutique
+                            et de temps en temps de mise en relation avec de la clientèle.</p>
+                        <p>Cette expérience m'a permis une nouvelle fois d'améliorer mes compétences en rigueur,
+                            autonomie, savoir garder son sang-froid et travail d'équipe.</p>
+                        <img src="../images/pharmacie.jpg" alt="Pharmacie">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div id="SIO">
-            <div class="section__container">
-                <div class="SIO">
-                    <img src="../images/BTS SIO.jpg" />
-                </div>
-                <div class="content">
-                    <h1>Après l'obtention de mon bac j'ai réussi a entrer en BTS SIO au lycée Aristides Berges qui était
-                        la
-                        poursuite d'étude idéale pour moi et mes projets professionnelle. En effet j'avais pour projet
-                        de
-                        continuer mes études dans une formation qui mettait plus en avant l'apprentissage en pratique
-                        que
-                        théorique tout en restant dans le domaine du développement web. Le BTS SIO repondait
-                        parfaitement a
-                        mes
-                        requis j'ai alors fait ma demande et j'ai été accepté.</h1>
+            <div class="separator"></div>
+
+            <div id="Excel"><br><br><br><br>
+                <h1>Tableau de synthèse :</h1><br><br><br>
+                <div class="section__container2">
+                    <div class="content2">
+                        <p>Voici un tableau de synthèse montrant les objectifs que j'ai pu accomplir durant tout le BTS
+                            SIO.</p>
+                        <a href="../images/Kallouch-Wisam_tableau-de-synthèse.pdf" class="center" target="_blank"><img
+                                src="../images/excel.png" class="excel"></a>
+                    </div>
                 </div>
             </div><br><br>
-        </div>
+        </section>
 
-        <div id="Stage">
-            <h1 style="margin-left: 3rem; margin-bottom: 10rem; text-decoration: underline; font-family: 'Times New Roman', Times, serif;">
-                Expérience professionnelle :</h1>
-            <div class="section__container2">
-                <div class="content2">
-                    <h1>- Depuis mon arrivé à Berges j'ai pu effectuer deux stages me
-                        permettant d'évoluer dans mon
-                        domaine à la fois techniquement mais aussi professionnellement. Mon premier stage s'est passé à
-                        l'UGA de Grenoble pour une durée de 5 semaines et le
-                        deuxième a Solti pour une durée de 6 semaines.<br> - J'ai également pu effectuer un job d'été en
-                        tant que employé polyvalent en restauration. Ce job a durée 1 mois et j'ai pu au cours de
-                        celui-ci améliorer mes soft-skills comme mon autonomie, mon savoir-être mon organisation et
-                        autre.</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script>
-        function toggleDropdown() {
-            var dropdownMenu = document.getElementById("dropdown-menu");
-            var dropdownBtn = document.querySelector(".dropdown-btn");
-            if (dropdownMenu.style.display === "block") {
-                dropdownMenu.style.display = "none";
-            } else {
-                dropdownMenu.style.display = "block";
-                dropdownMenu.style.top = (dropdownBtn.offsetTop + dropdownBtn.offsetHeight) + "px";
-                dropdownMenu.style.left = dropdownBtn.offsetLeft + "px";
+        <script>
+            function toggleDropdown() {
+                var dropdownMenu = document.getElementById("dropdown-menu");
+                var dropdownBtn = document.querySelector(".dropdown-btn");
+                if (dropdownMenu.style.display === "block") {
+                    dropdownMenu.style.display = "none";
+                } else {
+                    dropdownMenu.style.display = "block";
+                    dropdownMenu.style.top = (dropdownBtn.offsetTop + dropdownBtn.offsetHeight) + "px";
+                    dropdownMenu.style.left = dropdownBtn.offsetLeft + "px";
+                }
             }
-        }
-    </script>
+        </script>
 </body>
 
 </html>
